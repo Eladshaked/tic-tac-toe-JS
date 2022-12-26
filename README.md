@@ -1,5 +1,5 @@
 # tic-tac-toe-JS
-כדי לשחק במשחק הורד את תקיית "java-script-WEB"
+כדי לשחק במשחק הורד את תקיית "java-script-WEB" <br>
 לאחר מכן הכנס ל "index.html."
 והרץ על השרת שלך
 
