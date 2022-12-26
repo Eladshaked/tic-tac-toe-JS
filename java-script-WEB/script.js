@@ -19,19 +19,6 @@ function start(){
     document.getElementById("instructions").style.visibility = "hidden"
 }
 
-function white(){
-    document.getElementById("body").style.background = "white"
-    for (let i = 1; i < 10; i++) {
-        document.getElementById(i).style.background = "white";
-    }
-}
-function purple(){
-    document.getElementById("body").style.background = "rgb(98, 135, 255)"
-    for (let i = 1; i < 10; i++) {
-        document.getElementById(i).style.background = "rgb(98, 135, 255)";
-    }
-}
-
 // function of each move.
 // Also checking the status of the board.
 function turn(id){
