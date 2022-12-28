@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>tic tac toe</title>
+</head>
+<body id="body">
+    <!-- הוראות המשחק -->
+    <div id="instructions">
+        <ul>
+            <li>
+                The game is played on a grid that's 3 squares by 3 squares
+            </li>
+            <br>
+            <li>
+                You are X, your friend is O.<br>Players take turns putting their marks in empty squares.
+            </li>
+            <br>
+            <li>
+                The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+            </li>
+            <br>
+            <li>
+                When all 9 squares are full, the game is over.
+            </li>
+        </ul>
+        <button onclick="start()">lets play</button>
+    </div>
+    <!-- לוח ניקוד של המשתתפים -->
+    <div class="score-board">
+        X' score:&nbsp;<span id="X-score"></span>&nbsp;|&nbsp;O' score:&nbsp;<span id="O-score"></span>
+    </div>
+    <!-- שורה המציינת של מי התור בכל רגע -->
+    <div class="turn"><span id="player_turn"></span>' turn</div>
+    <!-- טיימר מעודכן -->
+    <div id="timer">00:30</div>
+    <!-- לוח המשחק -->
+    <div class="grid-container">
+        <div class="item" id= 1 onclick="turn(1)"></div>
+        <div class="item" id= 2 onclick="turn(2)"></div>
+        <div class="item" id= 3 onclick="turn(3)"></div>
+        <div class="item" id= 4 onclick="turn(4)"></div>
+        <div class="item" id= 5 onclick="turn(5)"></div>
+        <div class="item" id= 6 onclick="turn(6)"></div>
+        <div class="item" id= 7 onclick="turn(7)"></div>
+        <div class="item" id= 8 onclick="turn(8)"></div>
+        <div class="item" id= 9 onclick="turn(9)"></div>
+    </div>
+    <!-- תצוגת סוף המשחק -->
+    <div class="game-over-screen" id="end-screen">
+        <div class="firework"></div>
+        <span id="hwo-win"></span> win<br>
+        <button onclick="restart()">play again</button>
+    </div>
+</body>
+</html>
+<script src="/script.js"></script>
