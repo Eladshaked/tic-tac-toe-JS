@@ -2,8 +2,6 @@ body{
     background: rgb(140, 167, 255);
 }
 
-/* הלוטאפי שלו */
-
 #instructions{
     position: absolute;
     /* visibility: hidden; */
